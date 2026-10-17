@@ -1,125 +1,57 @@
-<div align="center">
+# Rehan Muhammad
 
-# ⚡ Muhammad Rehan
-### Systems Architect • Combinatorial Algorithm Researcher
+**Independent Researcher · Systems, Algorithms, AI Agents**
 
-<!-- Animated Typing SVG Header -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=61AFEF&center=true&vCenter=true&width=600&lines=Low-Level+Systems+Programming+(C+%2F+Rust);RISC-V+Unix+Kernel+Development;Exact+NP-Complete+Algorithms+(Z%2B%2B);Multi-Agent+Intelligence+Kernel+(MAIK)" alt="Typing SVG" />
-</a>
+I build low-level systems and the infrastructure that lets AI agents operate real computers:
+exact algorithms for NP-complete problems, kernel-level memory management, and browser/desktop
+bridges for agent runtimes.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Focus-Systems_%26_Algorithms-blue?style=for-the-badge&color=007ACC" />
-  <img src="https://img.shields.io/badge/Open_To-Remote_Contracts-orange?style=for-the-badge&color=FF8800" />
-</p>
-
-</div>
+**Rehan Theory Lab** · rehan@rehantheorylab.com
 
 ---
 
-### 💻 Live Kernel Terminal Mockup
+## Projects
 
-```text
-  ___  ____  ____    _   _ _   _ _____  __
- |_  ||  _ \|  _ \  | | | | \ | |_   _\ \/ /
-  / / | |_) | |_) | | | | |  \| | | |  \  / 
- / /__|  __/|  __/  | |_| | |\  | | |  /  / 
-|_____|_|   |_|      \___/|_| \_| |_| /_/\_\
-[   0.000000] Booting ZPP Unix on RISC-V 64-bit virt machine...
-[   0.000412] Trap vectors initialized: stvec -> kernel_trap_entry
-[   0.000850] Physical Memory: 128MB detected | Paging: Sv39 3-level enabled
-[   0.001205] Initializing kernel memory allocator: Buddy + Slab active
-[   0.001940] Scheduler online: Round-Robin preemptive context switcher
-[   0.002410] System ready. Initializing PID 1 /bin/init...
-```
+### [Z++ — exact subset-sum solver](https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver)
+![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
----
+A solver that **races published algorithms against original engines** and reports which engine
+won on each problem — Schroeppel–Shamir, meet-in-the-middle, BCJ and others running as
+baselines, with original GDEP, adaptive core-aware partitioning, and arbitrary-precision
+paths competing against them.
 
-### 🔬 Core Flagship Projects
+- 49 engines; original engines take the majority of the 65-category suite
+- Measured n=60 in 524 s on an i3-2100 → **1,649×** vs BCJ's published 864,000 s
+- Documented memory floor: ~12 GB at n=60
+- Reproducible: `python tests/test_zpp.py`
 
-<table>
-<tr>
-<td width="50%">
+### [browser-bridge-for-muse](https://github.com/rehantheorylab-pixel/browser-bridge-for-muse)
+Unofficial bridge giving an AI agent **consent-based** access to a user's own browser and
+desktop. Multi-engine routing (real Chrome profile, CDP, patched driver), session handoff,
+MCP server. *Not affiliated with Meta.*
 
-### 🚀 [Z++ Exact Subset Sum Solver](https://github.com/rehantheorylab-pixel/zplus-subset-sum-solver)
-*Exact solver for NP-complete instances up to $n=70$ with quadrillion-scale integers.*
+### [MAIK — Multi-Agent Intelligence Kernel](https://github.com/rehantheorylab-pixel/maik)
+Agent org chart with specialized routing, self-grading runs, and reproducible benchmarks.
+CEO → manager → agent → sub-agent hierarchy with per-node resolved prompts.
 
-- **Core Tech:** Rust (`zpp_rust`) + Multi-engine Python (`Z++.py`)
-- **Algorithms:** Sum-range partitioning, Meet-in-the-Middle, parallel branch-and-bound
-- **Includes:** Benchmarking suite, GUI visualizer, formal `CITATION.cff`
-
-<p>
-  <img src="https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Complexity-NP--Complete-critical?style=flat-square" />
-</p>
-
-</td>
-<td width="50%">
-
-### ⚙️ [ZPP Unix Kernel](https://github.com/rehantheorylab-pixel/zpp_unix)
-*Minimal Unix-like operating system written from scratch targeting the RISC-V architecture.*
-
-- **Core Tech:** Bare-metal C, RISC-V Assembly, Makefile build system
-- **Features:** Page tables, exception/trap handling, preemptive scheduler, syscall table
-- **Environment:** Tested under QEMU RISC-V virt machine with GDB
-
-<p>
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arch-RISC--V-black?style=flat-square" />
-  <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square" />
-</p>
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-### 🧠 [MAIK (Multi-Agent Intelligence Kernel)](https://github.com/rehantheorylab-pixel/maik-demo)
-*Autonomous agent execution kernel with tiered memory caching, DAG scheduling, and automated verification.*
-
-- **Features:** L1/L2 memory hierarchy, self-improving verification loops, deterministic rule enforcement.
-- **Reports:** Includes automated benchmark validation reports (`hard_benchmark_report.md`, `live_verify_results.json`).
-
-</td>
-</tr>
-</table>
+### [ZPP Unix](https://github.com/rehantheorylab-pixel/zpp_unix)
+Extended the [caffeinix](https://github.com/TroyMitchell911/caffeinix) RISC-V kernel (GPL-3.0)
+with a lock-free allocator, arena allocator, and slab allocator.
 
 ---
 
-### 🛠 Technical Arsenal
+## Focus
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=c,rust,python,bash,linux,git,github,vscode&perline=8" />
-</div>
+`systems programming` · `exact algorithms` · `memory allocators` · `RISC-V` ·
+`agent infrastructure` · `browser automation` · `computer use`
 
-<br/>
+## Elsewhere
 
-```c
-// Engineering Philosophy
-struct SystemsEngineer {
-    const char* focus       = "Bare-Metal & Combinatorial Solvers";
-    const char* languages[] = {"C", "Rust", "Python", "RISC-V ASM"};
-    bool abstractions_leaky = true;
-    bool verify_empirically  = true;
-};
-```
+[ORCID](https://orcid.org/0009-0003-8748-6524) · [Zenodo](https://doi.org/10.5281/zenodo.20399806) · [HuggingFace](https://huggingface.co/12rehdsa)
 
----
+## Contact
 
-### 📊 Real-Time GitHub Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rehantheorylab-pixel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rehantheorylab-pixel&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rehantheorylab-pixel&theme=tokyonight&hide_border=true" />
-</div>
-
----
-
-### 📬 Contact & Consulting
-- **Specialties:** High-performance systems programming, RISC-V OS development, algorithmic bottlenecks, and contract consulting.
-- **Inquiries:** Reach out via GitHub Issues or discussions across any repository.
+Open to remote contracts in systems programming and agent infrastructure.
+**rehan@rehantheorylab.com**
