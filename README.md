@@ -13,6 +13,7 @@
 [![Z++](https://img.shields.io/badge/Z%2B%2B-exact_subset_sum-1f6feb?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver)
 [![Bridge](https://img.shields.io/badge/browser_bridge-for_agents-1f6feb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/rehantheorylab-pixel/browser-bridge-for-muse)
 [![MAIK](https://img.shields.io/badge/MAIK-multi--agent_kernel-1f6feb?style=for-the-badge&logo=python&logoColor=white)](https://github.com/rehantheorylab-pixel/maik)
+[![Kernel](https://img.shields.io/badge/ZPP_Unix-RISC--V_kernel-1f6feb?style=for-the-badge&logo=c&logoColor=white)](https://github.com/rehantheorylab-pixel/zpp_unix)
 
 <br>
 
@@ -23,12 +24,27 @@
 ---
 
 <div align="center">
-<img src="assets/race.svg" alt="Animated illustration: several engines racing to solve one problem, the fastest engine wins" width="100%">
+<img src="assets/race.svg" alt="Animated illustration: several engines racing to solve one problem; the fastest engine wins" width="100%">
 </div>
 
-I work on two hard problems at once: making **exact computation faster** — NP-complete search,
-kernel-level memory management — and making it **safe for AI agents to operate real machines**,
-through bridges with an explicit consent model.
+<br>
+
+## Research
+
+<div align="center">
+<img src="assets/research.svg" alt="Three research areas: exact search, kernel memory, agent access" width="100%">
+</div>
+
+Three problems I keep returning to, because each one punishes shortcuts:
+
+- **Exact search** — a solver is only useful if it is *right* every time. Approximation is easy;
+  proving there is no solution is not. Racing independent engines means the answer comes with
+  a witness for *which* technique found it.
+- **Kernel memory** — allocators are where an operating system either holds or falls apart.
+  Writing one that is correct under concurrency, inside someone else's kernel, is a different
+  discipline from writing one from a blank page.
+- **Agent access** — an agent is useless without the user's real sessions, and dangerous with
+  them. The whole problem is making that access consented, scoped, visible and reversible.
 
 ---
 
@@ -103,6 +119,27 @@ scope:      ~390 lines into a ~7,500-line kernel
 </td>
 </tr>
 </table>
+
+---
+
+## Record
+
+<div align="center">
+<img src="assets/timeline.svg" alt="Timeline of public work through 2026" width="100%">
+</div>
+
+<br>
+
+Every row below is checkable by clicking through. No claim here depends on taking my word for it.
+
+| Artifact | Evidence |
+|---|---|
+| Z++ — 49 engines, MIT licence | [repository](https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver) |
+| `n=60 → 524 s` on i3-2100, `1,649×` vs BCJ | [commit](https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver) · measured, not projected |
+| `n=60 → 24.3 s` on Ryzen 9 | **projection — not yet measured** |
+| caffeinix fork: 3 allocators, **+391 / −164** lines over 59 files | [commit `329116b`](https://github.com/rehantheorylab-pixel/zpp_unix) |
+| DOI archived | [10.5281/zenodo.20399806](https://doi.org/10.5281/zenodo.20399806) |
+| ORCID | [0009-0003-8748-6524](https://orcid.org/0009-0003-8748-6524) |
 
 ---
 

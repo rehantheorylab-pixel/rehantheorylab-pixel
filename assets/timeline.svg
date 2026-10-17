@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-label="Timeline of work, 2026">
+  <style>
+    .k    { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 1.4px; fill: #58a6ff; }
+    .t    { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #e6edf3; }
+    .d    { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 11px; fill: #8b949e; }
+
+    @keyframes progress { 0% { transform: scaleX(0); } 60%, 100% { transform: scaleX(1); } }
+    @keyframes ringpop  { 0%, 10% { r: 5; opacity: .45; } 26%, 100% { r: 7; opacity: 1; } }
+    @keyframes breathe  { 0%, 100% { opacity: .12; } 50% { opacity: .32; } }
+
+    .rail { transform-box: fill-box; transform-origin: left center; animation: progress 6.5s cubic-bezier(.3,.1,.2,1) infinite both; }
+    .grid { animation: breathe 5s ease-in-out infinite; }
+
+    /* Only the node rings animate. All text is static and fully legible at frame 0. */
+    .n1 { animation: ringpop 6.5s 0.00s infinite both; }
+    .n2 { animation: ringpop 6.5s 0.55s infinite both; }
+    .n3 { animation: ringpop 6.5s 1.10s infinite both; }
+    .n4 { animation: ringpop 6.5s 1.65s infinite both; }
+    .n5 { animation: ringpop 6.5s 2.20s infinite both; }
+  </style>
+
+  <defs>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <linearGradient id="railDim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#58a6ff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0.30"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1" fill="#1c2128"/>
+    </pattern>
+    <clipPath id="frame"><rect x="0" y="0" width="1000" height="250" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="250" fill="#0d1117"/>
+    <rect width="1000" height="250" fill="url(#dots)" class="grid"/>
+
+    <text x="40" y="44" font-family="'SFMono-Regular',Consolas,monospace" font-size="10.5" font-weight="700" letter-spacing="1.4" fill="#58a6ff">TIMELINE</text>
+    <line x1="122" y1="40" x2="960" y2="40" stroke="#21262d" stroke-width="1"/>
+
+    <line x1="80" y1="120" x2="920" y2="120" stroke="url(#railDim)" stroke-width="2"/>
+    <rect x="80" y="119" width="840" height="2" fill="url(#rail)" class="rail"/>
+
+    <circle cx="120" cy="120" r="7" fill="#0d1117" stroke="url(#rail)" stroke-width="2" class="n1"/>
+    <circle cx="320" cy="120" r="7" fill="#0d1117" stroke="url(#rail)" stroke-width="2" class="n2"/>
+    <circle cx="520" cy="120" r="7" fill="#0d1117" stroke="url(#rail)" stroke-width="2" class="n3"/>
+    <circle cx="720" cy="120" r="7" fill="#0d1117" stroke="url(#rail)" stroke-width="2" class="n4"/>
+    <circle cx="880" cy="120" r="7" fill="#0d1117" stroke="url(#rail)" stroke-width="2" class="n5"/>
+
+    <text x="120" y="96"  text-anchor="middle" class="k">MAY 2026</text>
+    <text x="120" y="150" text-anchor="middle" class="t">Z++ solver</text>
+    <text x="120" y="168" text-anchor="middle" class="d">Zenodo DOI archived</text>
+
+    <text x="320" y="96"  text-anchor="middle" class="k">JUL 2026</text>
+    <text x="320" y="150" text-anchor="middle" class="t">RISC-V allocators</text>
+    <text x="320" y="168" text-anchor="middle" class="d">lock-free · arena · slab</text>
+
+    <text x="520" y="96"  text-anchor="middle" class="k">AUG 2026</text>
+    <text x="520" y="150" text-anchor="middle" class="t">MAIK</text>
+    <text x="520" y="168" text-anchor="middle" class="d">multi-agent kernel</text>
+
+    <text x="720" y="96"  text-anchor="middle" class="k">SEP 2026</text>
+    <text x="720" y="150" text-anchor="middle" class="t">KiloChat</text>
+    <text x="720" y="168" text-anchor="middle" class="d">gateway client</text>
+
+    <text x="880" y="96"  text-anchor="middle" class="k">OCT 2026</text>
+    <text x="880" y="150" text-anchor="middle" class="t">Agent bridge</text>
+    <text x="880" y="168" text-anchor="middle" class="d">consent model</text>
+
+    <text x="40" y="222" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" fill="#6e7681">Dates reflect first public release of each project.</text>
+
+    <rect x="0.5" y="0.5" width="999" height="249" rx="16" fill="none" stroke="#30363d"/>
+  </g>
+</svg>
