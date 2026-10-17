@@ -1,18 +1,14 @@
 <div align="center">
 
-# Rehan Muhammad
-
-### Independent Researcher
-
-**Exact algorithms · Systems programming · Agent infrastructure**
+<img src="assets/hero.svg" alt="Rehan Muhammad — Independent Researcher" width="100%">
 
 <br>
 
-I work on two hard problems at once: making **exact computation faster** — NP-complete search,
-kernel-level memory management — and making it **safe for AI agents to operate real machines**,
-through bridges with an explicit consent model.
+<a href="https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=3400&pause=800&color=58A6FF&center=true&vCenter=true&width=820&lines=exact+algorithms+%E2%80%94+49+engines%2C+one+winner;systems+programming+%E2%80%94+allocators%2C+page+tables%2C+RISC-V;agent+infrastructure+%E2%80%94+consent-based+machine+access" alt="exact algorithms — systems programming — agent infrastructure">
+</a>
 
-<br>
+<br><br>
 
 [![Z++](https://img.shields.io/badge/Z%2B%2B-exact_subset_sum-1f6feb?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/rehantheorylab-pixel/zpp-subset-sum-solver)
 [![Bridge](https://img.shields.io/badge/browser_bridge-for_agents-1f6feb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/rehantheorylab-pixel/browser-bridge-for-muse)
@@ -23,6 +19,16 @@ through bridges with an explicit consent model.
 **Rehan Theory Lab**  ·  [rehan@rehantheorylab.com](mailto:rehan@rehantheorylab.com)  ·  Open to remote contracts
 
 </div>
+
+---
+
+<div align="center">
+<img src="assets/race.svg" alt="Animated illustration: several engines racing to solve one problem, the fastest engine wins" width="100%">
+</div>
+
+I work on two hard problems at once: making **exact computation faster** — NP-complete search,
+kernel-level memory management — and making it **safe for AI agents to operate real machines**,
+through bridges with an explicit consent model.
 
 ---
 
