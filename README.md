@@ -17,7 +17,7 @@
 
 <br>
 
-**Rehan Theory Lab**  ·  [rehan@rehantheorylab.com](mailto:rehan@rehantheorylab.com)  ·  Open to remote contracts
+**Rehan Theory Lab**  ·  [rehan.theorylab@gmail.com](mailto:rehan.theorylab@gmail.com)  ·  Open to remote contracts
 
 </div>
 
@@ -199,7 +199,7 @@ Every row below is checkable by clicking through. No claim here depends on takin
 <div align="center">
 
 **Working on something that needs exact search, kernel work, or agent tooling?**
-[rehan@rehantheorylab.com](mailto:rehan@rehantheorylab.com)
+[rehan.theorylab@gmail.com](mailto:rehan.theorylab@gmail.com)
 
 <sub><a href="https://github.com/rehantheorylab-pixel">github.com/rehantheorylab-pixel</a></sub>
 
